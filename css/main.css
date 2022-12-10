@@ -59,13 +59,6 @@ html {
     cursor: pointer;
 }
 
-.logo {
-    font-family: eurofurencer, serif;
-    font-size: 2.4em;
-    color: var(--clr1);
-    font-weight: 400;
-}
-
 .green {
     color: var(--clr3);
 }
@@ -77,6 +70,13 @@ html {
 
 /* **** */
 
+.logo {
+    font-family: eurofurencer, serif;
+    font-size: 2.4em;
+    color: var(--clr1);
+    font-weight: 400;
+}
+
 .main-header {
     background-color: var(--clr0);
 }
@@ -84,7 +84,16 @@ html {
 .main-screen {
     position: fixed;
     inset: 0;
-    background-color: #000;
+    background-color: rgb(0 0 0 / 70%);
+    cursor: pointer;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity .6s;
+}
+
+.screen-modal {
+    position: fixed;
+    inset: 0;
     background-color: rgb(0 0 0 / 70%);
     cursor: pointer;
     pointer-events: none;
@@ -95,6 +104,48 @@ html {
 body.menu-open .main-screen {
     pointer-events: auto;
     opacity: 1;
+}
+
+.modal-data {
+    position: fixed;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: space-around;
+    min-height: 350px;
+    max-width: 450px;
+    border-radius: 5px;
+    padding: 1em;
+    transition: 0.3 ease-in-out;
+    display: none;
+
+}
+
+.modal-data p {
+    color: var(--clr2);
+    font-weight: 400;
+}
+
+.modal-data h2 {
+    color: #4f4e4e;
+    font-size: 27px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.84px;
+
+}
+
+.modal-btn-close {
+    width: 145px;
+    padding: 1em;
+    align-self: center;
+    font-weight: bold;
+    background-color: #4f4e4e;
+    border: none;
+    color: var(--clr1);
+    text-transform: uppercase;
+
 }
 
 .header-box {
@@ -316,7 +367,12 @@ body.menu-open .main-screen {
     }
 
     .btn-modal {
-        display: none;
+        margin: auto;
+    }
+
+    .modal-data {
+        min-width: 100%;
+        min-height: 90%;
     }
 }
 
@@ -344,7 +400,6 @@ body.menu-open .main-screen {
     }
 
     .card img {
-    
         width: 40%;
     }
 
@@ -355,7 +410,7 @@ body.menu-open .main-screen {
     }
 
     .card p {
-        max-width: 90%;
+        max-width: 100%;
     }
 
     .main-footer {
@@ -379,15 +434,15 @@ body.menu-open .main-screen {
 
     .card {
         margin-top: var(--before-card);
-        max-width: 1000px;
-        min-height: 316px;
+        max-width: 980px;
 
     }
 
     .card .card-text {
-
+        min-height: 290px;
         max-height: 100%;
         margin-left: var(--middle-left-margin);
+
 
     }
 
@@ -396,9 +451,14 @@ body.menu-open .main-screen {
         max-width: 500px;
     }
 
+    .card p {
+        max-width: 100%;
+    }
+
     .card img {
-       /* aspect-ratio: 16/9; */
-       aspect-ratio: 16 / 9;
+        /* aspect-ratio: 16/9; */
+        /* aspect-ratio: 16 / 9; */
+        width: 40%;
     }
 
     .main-nav a {
