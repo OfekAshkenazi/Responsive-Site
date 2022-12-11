@@ -20,8 +20,15 @@
             <div class="logo">Blogin<span class="green">.</span></div>
             <nav class="main-nav">
                 <ul class="list-clean flex">
-                    <li><a href="#" class="active">Journal</a></li>
-                    <li><a href="#">About</a></li>
+                    <li onclick="onDpOpen()" class="dropdown"><a href="#" class="active">Journal</a>
+                        <ul class="drop-down list-clean flexC">
+                            <li><a href="https://www.facebook.com/">October 2016</a></li>
+                            <li><a href="">January 2017</a></li>
+                            <li><a href="">April 2017</a></li>
+                            <li><a href="">July 2017</a></li>
+                         </ul>
+                    </li>
+                    <li><a href="https://twitter.com/">About</a></li>
                     <li><a href="#">Work</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
@@ -44,8 +51,7 @@
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                     pariatur...
                 </p>
-                <button class="btn-modal" onclick="onOpenModal()">Continue Reading<span
-                        class="arrow">&rarr;</span></button>
+                <button class="btn-modal pointer" onclick="onOpenModal()">Continue Reading</button>
             </div>
         </div>
         <div class="card flex">
@@ -61,8 +67,7 @@
                     pariatur...
                 </p>
 
-                <button class="btn-modal" onclick="onOpenModal()">Continue Reading<span
-                        class="arrow">&rarr;</span></button>
+                <button class="btn-modal pointer" onclick="onOpenModal()">Continue Reading</button>
             </div>
         </div>
         <div class="card flex">
@@ -77,8 +82,7 @@
                     pariatur...
                 </p>
 
-                <button class="btn-modal" onclick="onOpenModal()">Continue Reading <span
-                        class="arrow">&rarr;</span></button>
+                <button class="btn-modal pointer" onclick="onOpenModal()">Continue Reading</button>
             </div>
         </div>
         <div class="paging">
