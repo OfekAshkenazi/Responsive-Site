@@ -64,7 +64,7 @@ html {
 }
 
 .arrow {
-    color: #fff;
+    color: var(--clr1);
     display: block;
 }
 
@@ -79,6 +79,7 @@ html {
 
 .main-header {
     background-color: var(--clr0);
+    box-shadow: inset 0 -5px 0 #000;
 }
 
 .main-screen {
@@ -108,7 +109,7 @@ body.menu-open .main-screen {
 
 .modal-data {
     position: fixed;
-    background-color: #fff;
+    background-color: var(--clr1);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -151,25 +152,31 @@ body.menu-open .main-screen {
 .header-box {
     margin: auto;
     width: 100%;
+   
 }
 
 .main-nav a {
     border-right: 1px solid #1d1d1d;
-    box-shadow: -1px 0 0 #1d1d1d;
-    background-color: #292929;
+    box-shadow: inset 0 -5px 0 #000;
+    background-color: var(--clr0);
     text-shadow: 0 1px 0 #1e1e1e;
     display: block;
     font-weight: 700;
     color: var(--clr1);
+    
 }
 
 /* no need to touch */
 .main-nav a:hover {
     box-shadow: -1px 0 0 #1d1d1d, inset 0 -6px 0 var(--clr3);
     color: var(--clr3);
+    
+}
+.main-nav a.active {
+    box-shadow: -1px 0 0 #1d1d1d, inset 0 -6px 0 var(--clr3);
+    color: var(--clr3);
 
 }
-
 .main-content {
     flex-wrap: wrap;
     border: 1px solid #e1e0e0;
@@ -212,7 +219,7 @@ body.menu-open .main-screen {
 }
 
 .btn-modal span {
-    color: #fff;
+    color: var(--clr1);
     width: 10px;
     font-weight: bold;
     padding: 0em 0.2em;
@@ -284,12 +291,8 @@ body.menu-open .main-screen {
 
 .s-text {
     color: #a6a6a6;
-    font-family: Lato;
     font-size: 13px;
     font-weight: 400;
-    font-style: normal;
-    letter-spacing: normal;
-    line-height: 20px;
     text-align: center;
     padding: 2.307em 1.884em;
 }
@@ -372,7 +375,7 @@ body.menu-open .main-screen {
 
     .modal-data {
         min-width: 100%;
-        min-height: 90%;
+        min-height: 100%;
     }
 }
 
@@ -391,7 +394,7 @@ body.menu-open .main-screen {
     }
 
     .main-content {
-        max-width: 740px;
+        max-width: 900px;
     }
 
     .card {
