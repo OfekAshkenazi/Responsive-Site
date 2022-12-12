@@ -1,15 +1,16 @@
 /* basic */
-@import url(/css/setup/vars.css);
-@import url(/css/setup/helpers.css);
-@import url(/css/setup/font-family.css);
+@import './setup/vars.css';
+@import './setup/helpers.css';
+@import './setup/font-family.css';
+
 /* cmps */
-@import url(/css/setup/icon-hover-color.css);
-@import url(/css/setup/btn-modal-open.css);
-@import url(/css/setup/cmps/header.css);
-@import url(/css/setup/cmps/drop-down.css);
-@import url(/css/setup/cmps/modal.css);
-@import url(/css/setup/cmps/main-content.css);
-@import url(/css/setup/cmps/footer.css);
+@import './cmps/header.css';
+@import './cmps/main-content.css';
+@import './setup/icon-hover-color.css';
+@import './setup/btn-modal-open.css';
+@import './cmps/drop-down.css';
+@import './cmps/footer.css';
+@import './cmps/modal.css';
 
 * {
     font-family: Lato, serif;
