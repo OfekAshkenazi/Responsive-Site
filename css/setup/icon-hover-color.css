@@ -1,0 +1,22 @@
+.icon-footer a {
+    display: block;
+    color: #e5e5e5;
+    font-size: 40px;
+    padding: 0px 10px;
+}
+
+.fc:hover {
+    color: #516fad;
+}
+
+.tw:hover {
+    color: #1d98f0;
+}
+
+.be:hover {
+    color: #f01df0c1;
+}
+
+.dr:hover {
+    color: #f0361dc1;
+}

@@ -1,0 +1,29 @@
+.btn-modal {
+    border: 2px solid #c2c2c2;
+    color: #c2c1c1;
+    font-weight: 700;
+    background-color: var(--clr1);
+    align-self: flex-start;
+    padding: 0.75em 1.625em;
+    border-radius: 2.5em;
+    margin-top: 0.9em;
+    transition: padding 0.4s;
+    position: relative;
+}
+
+.btn-modal:hover {
+    border: 2px solid var(--clr3);
+    color: var(--clr3);
+    padding-inline-end: 2.25em;
+
+}
+
+.btn-modal:hover::after {
+    content: "\2192";
+    position: absolute;
+    right: 0.75em;
+}
+
+.btn-modal {
+    margin: auto;
+}

@@ -1,0 +1,53 @@
+html {
+    font-family: Lato, serif;
+    line-height: 1.5;
+}
+
+.flex {
+    display: flex;
+}
+
+.flexC {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-clean {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.list-clean li a {
+    text-decoration: none;
+}
+
+.text-center {
+    align-items: center;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.green {
+    color: var(--clr3);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 1em;
+}
+
+.href-clean {
+    list-style-type: none;
+}
+
+.display-block {
+    display: block;
+}

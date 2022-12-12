@@ -1,0 +1,38 @@
+.dropdown {
+    position: relative;
+}
+
+.drop-down {
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+
+.dropdown:hover .drop-down {
+    display: block;
+}
+
+.drop-down a {
+    border-left: 1.5px solid var(--clr4);
+}
+
+@media (max-width: 740px) {
+    .dropdown .drop-down ul {
+        position: relative;
+    }
+    .dropdown:hover .drop-down {
+        display: none;
+    }
+}
+
+@media (min-width: 740px) {
+    .drop-down a {
+        width: 6.85em;
+    }
+}
+
+@media (min-width: 1100px) {
+    .drop-down a {
+        width: 9.6em;
+    }
+}
